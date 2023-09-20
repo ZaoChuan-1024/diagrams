@@ -1,9 +1,51 @@
-<mxfile host="app.diagrams.net" modified="2023-09-20T01:15:48.975Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31" version="21.6.8" etag="Hi5oR9joDk50D4EFu75x" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-20T01:27:32.094Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31" etag="jA0mkfOjGh2wBzzpky6N" version="21.6.8" type="github">
   <diagram name="第 1 页" id="EjgybLyMV6ZUvuqBOhrF">
-    <mxGraphModel>
+    <mxGraphModel dx="1142" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9yRv1EzggREAqIdP4-oX-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9yRv1EzggREAqIdP4-oX-1" target="9yRv1EzggREAqIdP4-oX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-1" value="Client" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-3" value="Server" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="460" y="55" width="580" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-5" value="sql语句" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9yRv1EzggREAqIdP4-oX-6" target="9yRv1EzggREAqIdP4-oX-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-6" value="Cache 默认未开启&lt;br&gt;如果开启缓存 查找是否命中&lt;br&gt;该缓存为表级缓存 表数据过大时不建议开启" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="110" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9yRv1EzggREAqIdP4-oX-7" target="9yRv1EzggREAqIdP4-oX-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-7" value="解析器&lt;br&gt;通过词法解析与语法解析将执行的SQL语句解析为语法树" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="110" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9yRv1EzggREAqIdP4-oX-9" target="9yRv1EzggREAqIdP4-oX-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-9" value="预处理器&lt;br&gt;将解析树预处理为新的解析树并进行验证" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9yRv1EzggREAqIdP4-oX-12" target="9yRv1EzggREAqIdP4-oX-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-12" value="优化器&lt;br&gt;对解析树进行优化并找出成本最低路径的执行过程" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-14" value="执行器&lt;br&gt;调用存储引擎接口执行执行过程" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9yRv1EzggREAqIdP4-oX-16" value="存储引擎&lt;br&gt;对数据库数据进行管理，并相应提供API，基于SPI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="430" width="290" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
